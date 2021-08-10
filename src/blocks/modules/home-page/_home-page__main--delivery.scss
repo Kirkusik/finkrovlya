@@ -1,0 +1,35 @@
+.delivery {
+   padding-top: 64px;
+   padding-bottom: 40px;
+}
+
+.delivery__title {
+   margin-bottom: 80px;
+}
+
+.delivery__desc {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+
+   @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+   }
+}
+
+.delivery__text {
+   & p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: center;
+
+      color: rgba($color-black, 0.7);
+
+      @media (max-width: 800px) {
+         text-align: left;
+      }
+   }
+}

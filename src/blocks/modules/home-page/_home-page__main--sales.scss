@@ -1,0 +1,130 @@
+.home-sales {
+   padding-top: 50px;
+   padding-bottom: 80px;
+   background-color: $color-dark;
+}
+
+.home-sales__title {
+   margin-bottom: 57px;
+}
+
+.home-sales__slider {
+   @extend .list-reset;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+
+   column-gap: 30px;
+   @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.home-sales__slide {
+   padding: 40px 30px 15px;
+   background-color: $color-darken-white;
+   border-radius: 20px;
+}
+
+.sales-slide {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @media (max-width: 992px) {
+      &:nth-child(3) {
+         display: none;
+      }
+   }
+
+   @media (max-width: 576px) {
+      &:nth-child(2) {
+         display: none;
+      }
+   }
+}
+
+.sales-slide__img {
+   width: 220px;
+   height: 98px;
+   object-fit: contain;
+}
+
+.sales-slide__category {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 23px;
+
+   color: $color-black;
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+
+.sales-slide__title {
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 36px;
+
+   color: $color-black;
+   margin-top: 0;
+   margin-bottom: 15px;
+}
+
+.sales-slide__description {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 17px;
+   text-align: center;
+   margin-bottom: 25px;
+   margin-top: 0;
+
+   color: rgba($color-black, 0.7);
+}
+
+.sales-slide__prices {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 0;
+   margin-bottom: 30px;
+}
+
+.sales-slide__old-price {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 25px;
+   line-height: 29px;
+   text-decoration-line: line-through;
+
+   color: rgba($color-black, 0.5);
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+.sales-slide__new-price {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 35px;
+
+   color: $color-black;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.sale-slide__date {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 17px;
+
+   color: rgba($color-dark, 0.75);
+   margin-top: 20px;
+   margin-bottom: 0;
+}

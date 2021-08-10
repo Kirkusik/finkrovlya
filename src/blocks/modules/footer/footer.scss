@@ -1,0 +1,143 @@
+.page-footer {
+   background-color: $color-dark;
+   padding-top: 30px;
+   padding-bottom: 15px;
+}
+
+.page-footer__container {
+   display: grid;
+   grid-template-columns: max-content auto max-content;
+   justify-content: space-between;
+
+   @media (max-width: 1024px) {
+      grid-template-columns: max-content auto;
+      justify-items: space-between;
+   }
+   @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+   }
+}
+
+.page-footer__block {
+   @media (max-width: 1024px) {
+      &--copyright {
+         order: 1;
+         grid-column: span 2;
+         margin-top: 30px;
+         width: 60%;
+         justify-self: center;
+      }
+      // &--logo {
+      // }
+      // &--contacts {
+      // }
+   }
+   @media (max-width: 768px) {
+      grid-column: span 1;
+      width: 100%;
+   }
+}
+
+.work-schedule {
+   margin-top: 30px;
+}
+
+.work-schedule__item {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 23px;
+
+   color: $color-white;
+
+   &--title {
+      margin-top: 0;
+      margin-bottom: 15px;
+   }
+   &--text {
+      margin-top: 0;
+      margin-bottom: 5px;
+   }
+}
+
+.contacts__item {
+   &--footer {
+      margin-bottom: 20px;
+   }
+}
+
+.footer-menu {
+   @extend .list-reset;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 50px 25px;
+
+   @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+   }
+}
+
+.footer-menu__item {
+   &:nth-child(1),
+   &:nth-child(2) {
+      grid-column: span 3;
+   }
+   &:nth-child(1) {
+      text-align: right;
+   }
+
+   &:nth-child(3),
+   &:nth-child(4),
+   &:nth-child(5) {
+      grid-column: span 2;
+      text-align: center;
+   }
+
+   @media (max-width: 576px) {
+      &:nth-child(n) {
+         grid-column: span 1;
+         text-align: center;
+      }
+   }
+}
+
+.footer-menu__link {
+   font-size: 17px;
+   line-height: 20px;
+   color: $color-white;
+   position: relative;
+
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+   }
+
+   &:hover {
+      opacity: 0.7;
+   }
+}
+
+.page-footer__socials {
+   margin-top: 40px;
+}
+
+.page-footer__copyright {
+   margin-bottom: 0;
+   margin-top: 20px;
+}
+
+.copyright {
+   text-align: center;
+
+   font-weight: bold;
+   font-size: 13px;
+   line-height: 16px;
+
+   color: $color-white;
+}
