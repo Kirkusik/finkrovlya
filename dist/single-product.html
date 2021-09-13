@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Finkrovlya</title>
+        <meta name="theme-color" content="#fff" />
+
+        <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./img/favicons/apple-touch-icon.png"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./img/favicons/favicon-32x32.png"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./img/favicons/favicon-16x16.png"
+/>
+<link rel="manifest" href="./img/favicons/site.webmanifest" />
+<link
+    rel="mask-icon"
+    href="./img/favicons/safari-pinned-tab.svg"
+    color="#5bbad5"
+/>
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+
+        <link rel="stylesheet" href="./styles/main.min.css" />
+    </head>
+    <body class="page__body">
+        <div class="page__wrapper page__wrapper--inner">
+            <header class="page__header page__header--inner">
+    <div class="container">
+        <nav class="page__nav navigation">
+            <a href="#" class="navigation__logo logo">
+                <img class="logo__img" src="./img/logo.png" alt="" />
+            </a>
+
+            <button
+                class="navigation__menus-burger"
+                type="button"
+                aria-label="Show Navigation Menu"
+                aria-expanded="false"
+                tabindex="0"
+            >
+                <svg
+                    width="40px"
+                    aria-hidden="true"
+                    viewBox="0 0 384.97 384.97"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                >
+                    <path
+                        d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+			C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"
+                    />
+                    <path
+                        d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+			S379.58,180.455,372.939,180.455z"
+                    />
+                    <path
+                        d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+			c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"
+                    />
+                </svg>
+            </button>
+            <div class="navigation__menus-wrapper">
+                <button
+                    class="navigation__menus-close"
+                    aria-label="Hide Navigation Menu"
+                >
+                    <svg
+                        aria-hidden="true"
+                        width="40px"
+                        height="40px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M6.22566 4.81096C5.83514 4.42044 5.20197 4.42044 4.81145 4.81096C4.42092 5.20148 4.42092 5.83465 4.81145 6.22517L10.5862 11.9999L4.81151 17.7746C4.42098 18.1651 4.42098 18.7983 4.81151 19.1888C5.20203 19.5793 5.8352 19.5793 6.22572 19.1888L12.0004 13.4141L17.7751 19.1888C18.1656 19.5793 18.7988 19.5793 19.1893 19.1888C19.5798 18.7983 19.5798 18.1651 19.1893 17.7746L13.4146 11.9999L19.1893 6.22517C19.5799 5.83465 19.5799 5.20148 19.1893 4.81096C18.7988 4.42044 18.1657 4.42044 17.7751 4.81096L12.0004 10.5857L6.22566 4.81096Z"
+                            fill="black"
+                        />
+                    </svg>
+                </button>
+                <ul class="navigation__contacts contacts">
+                    <li
+                        class="
+                            contacts__item
+                            contacts__item--header
+                            contacts__item--phones
+                        "
+                    >
+                        <a class="contacts__link" href="tel:+38(067) 500-06-75">
+                            +38(067) 500-06-75
+                        </a>
+                        <a class="contacts__link" href="tel:+38(050) 833-35-97">
+                            +38(050) 833-35-97
+                        </a>
+                    </li>
+                    <li
+                        class="
+                            contacts__item
+                            contacts__item--header
+                            contacts__item--mail
+                        "
+                    >
+                        <a
+                            class="contacts__link"
+                            href="mailTo:kocyubnyak@gmail.com"
+                        >
+                            kocyubnyak@gmail.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navigation__lang-switcher lang-switcher">
+                    <li class="lang-switcher__item">
+                        <a
+                            class="
+                                lang-switcher__link lang-switcher__link--active
+                            "
+                            href=""
+                            >ru</a
+                        >
+                    </li>
+                    <li class="lang-switcher__item">
+                        <a class="lang-switcher__link" href=""> ua </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+            <main class="page__main">
+                <section class="menu">
+    <div class="container">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="#" class="menu__link">Металочерепиця</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Бітумна черепиця</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Композитна черепиця</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Вікна та люки</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Плівки та мембрани</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Водостічні системи</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Плити OSB</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Металопрофіль</a>
+            </li>
+        </ul>
+    </div>
+</section>
+ <div class="pagination">
+    <div class="container">
+        <ul class="pagination__list">
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">
+                    <svg width="18px" height="14px">
+                        <use href="#house" />
+                    </svg>
+                </a>
+            </li>
+
+            
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">Каталог </a>
+            </li>
+
+            
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">Металочерепиця </a>
+            </li>
+
+            
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">RUUKKI </a>
+            </li>
+
+            
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">Frigge ( Black ) </a>
+            </li>
+
+            
+        </ul>
+    </div>
+</div>
+
+
+<article class="product" id="product-120">
+    <section class="product__main-info">
+    <div class="container">
+        <div class="product__slider-wrapper">
+            <div class="product__slider-thumbs">
+                <div
+                    id="gallery-1"
+                    class="
+                        gallery
+                        galleryid-102
+                        gallery-columns-4 gallery-size-full
+                    "
+                >
+                    <dl class="gallery-item">
+                        <dt class="gallery-icon landscape">
+                            <img
+                                src="./img/product-cat-1.png"
+                                class="attachment-full size-full"
+                                alt=""
+                                loading="lazy"
+                                width="270"
+                                height="150"
+                            />
+                        </dt>
+                    </dl>
+                    <dl class="gallery-item">
+                        <dt class="gallery-icon landscape">
+                            <img
+                                src="./img/product-cat-2.png"
+                                class="attachment-full size-full"
+                                alt=""
+                                loading="lazy"
+                                width="270"
+                                height="150"
+                            />
+                        </dt>
+                    </dl>
+                    <dl class="gallery-item">
+                        <dt class="gallery-icon landscape">
+                            <img
+                                src="./img/product-cat-3.png"
+                                class="attachment-full size-full"
+                                alt=""
+                                loading="lazy"
+                                width="270"
+                                height="150"
+                            />
+                        </dt>
+                    </dl>
+                    <dl class="gallery-item">
+                        <dt class="gallery-icon landscape">
+                            <img
+                                src="./img/product-cat-5.png"
+                                class="attachment-full size-full"
+                                alt=""
+                                loading="lazy"
+                                width="270"
+                                height="150"
+                            />
+                        </dt>
+                    </dl>
+                    <dl class="gallery-item">
+                        <dt class="gallery-icon landscape">
+                            <img
+                                src="./img/product-cat-4.png"
+                                class="attachment-full size-full"
+                                alt=""
+                                loading="lazy"
+                                width="270"
+                                height="150"
+                            />
+                        </dt>
+                    </dl>
+                    <br style="clear: both" />
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+            </div>
+            <div class="product__slider">
+                <img
+                    src="./img/product-cat-1.png"
+                    alt=""
+                    width="370"
+                    height="288"
+                />
+            </div>
+        </div>
+        <div class="product__info">
+            <h1 class="product__title">
+                Металочерепиця RUUKKI 30 Frigge ( Black )
+            </h1>
+            <p class="product__status">В наявності</p>
+            <div class="product__params">
+                <p class="product__params-title">Колір:</p>
+                <ul class="product__params-list">
+                    <li class="product__params-item">
+                        <a
+                            href="#"
+                            class="product__params-link"
+                            data-color="red"
+                        >
+                            <span class="v-hidden"> Красный цвет </span>
+                        </a>
+                    </li>
+                    <li class="product__params-item">
+                        <a
+                            href="#"
+                            class="
+                                product__params-link
+                                product__params-link--checked
+                            "
+                            data-color="blue"
+                        >
+                            <span class="v-hidden"> Синий цвет </span>
+                        </a>
+                    </li>
+                    <li class="product__params-item">
+                        <a
+                            href="#"
+                            class="product__params-link"
+                            data-color="black"
+                        >
+                            <span class="v-hidden"> Черный цвет </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product__price">
+                <p class="product__price-old">200 грн/м²</p>
+                <p class="product__price-new">190 грн/м²</p>
+            </div>
+
+            <button class="product__order">Замовити розрахунок</button>
+        </div>
+    </div>
+</section>
+
+    <section class="product__description product-description">
+    <div class="container">
+        <div class="product-description__tabs-wrapper">
+            <ul class="product-description__tabs-menu">
+                <li class="product-description__tabs-item">
+                    <a
+                        href="#description"
+                        class="
+                            product-description__tabs-link
+                            product-description__tabs-link--active
+                        "
+                    >
+                        Опис товару
+                    </a>
+                </li>
+                <li class="product-description__tabs-item">
+                    <a
+                        href="#characteristics"
+                        class="product-description__tabs-link"
+                    >
+                        Характеристики
+                    </a>
+                </li>
+                <li class="product-description__tabs-item">
+                    <a
+                        href="#specifications"
+                        class="product-description__tabs-link"
+                    >
+                        Специфікації
+                    </a>
+                </li>
+            </ul>
+            <ul class="product-description__tabs-content tabs-content">
+                <li
+                    id="description"
+                    class="tabs-content__item tabs-content__item--active"
+                >
+                    <p>Важливо !</p>
+                    <p>
+                        В связи с нестабильным курсом эвро и доллара, просим
+                        уточнять цены у менеджера компании. При покупке черепицы
+                        скидка на водосточную систему Profil (Польша) - 25%
+                    </p>
+                    <p>
+                        Битумная черепица IKO Cambridge Xpress - двухслойная
+                        ламминированая черепица, отличающаяся уникальностью
+                        формы и глубокими оттенками цвета. Помимо высоких
+                        технических характеристик, особенность этого кровельного
+                        материала - в создании эффекта объемности. В сочетании с
+                        богатым цветом, кровля приобретает презентабельный вид.
+                    </p>
+                </li>
+                <li id="characteristics" class="tabs-content__item">
+                    <p>Технічні характеристики:</p>
+                    <p>
+                        Длина - 995 mm (+/- 3) Ширина - 362 mm (+/- 3) Вес - +/-
+                        11,6 kg/m2 Поверхность из одного пакета / пачка max. 3.1
+                        m2 Плитка/штук в пачке - 20 Пачки/штук в паллете - 45
+                        Предел прочности на разрыв Длина (N/Scm) - 850 Удлинение
+                        на разрыв Длина/Ширина - 2.5 % min. Огнестойкость - FM
+                        CLASS A, ASTM D3462, CLASS B-CZ Кровельный материал для
+                        промышленных и жилых сооружений с уклоном кровли между
+                        15° и 85°
+                    </p>
+                </li>
+                <li id="specifications" class="tabs-content__item">
+                    katalogiko.pdf <br />
+                    katalogiko.pdf
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</article>
+
+<section class="section allready-viewed">
+    <div class="container">
+        <h2 class="allready-viewed__title">Ви проглядали раніше</h2>
+
+        <div
+            class="allready-viewed__slider product-slider"
+            id="allready-viewed-slider"
+            style="
+                --swiper-navigation-color: #000;
+                --swiper-navigation-size: 30px;
+                --swiper-pagination-color: #ff2626;
+            "
+        >
+            <ul class="allready-viewed__slider-wrapper">
+                <li class="catalog__item allready-viewed__item product-card">
+                    <img
+                        class="product-card__img"
+                        src="./img/product-image.png"
+                        alt=""
+                        width="182"
+                        height="81"
+                    />
+                    <p class="catalog__item-cat-name">Металочерепиця</p>
+                    <h3 class="catalog__item-name">
+                        <a href="#" class="catalog__item-link">
+                            KATEPAL Mension Black
+                        </a>
+                    </h3>
+                    <p class="catalog__item-status">в наявності</p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <button href="#" class="product-card__order order-btn">
+                        Замовити розрахунок
+                    </button>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="catalog__item allready-viewed__item product-card">
+                    <img
+                        class="product-card__img"
+                        src="./img/product-image.png"
+                        alt=""
+                        width="182"
+                        height="81"
+                    />
+                    <p class="catalog__item-cat-name">Металочерепиця</p>
+                    <h3 class="catalog__item-name">
+                        <a href="#" class="catalog__item-link">
+                            KATEPAL Mension Black
+                        </a>
+                    </h3>
+                    <p class="catalog__item-status">в наявності</p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <button href="#" class="product-card__order order-btn">
+                        Замовити розрахунок
+                    </button>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="catalog__item allready-viewed__item product-card">
+                    <img
+                        class="product-card__img"
+                        src="./img/product-image.png"
+                        alt=""
+                        width="182"
+                        height="81"
+                    />
+                    <p class="catalog__item-cat-name">Металочерепиця</p>
+                    <h3 class="catalog__item-name">
+                        <a href="#" class="catalog__item-link">
+                            KATEPAL Mension Black
+                        </a>
+                    </h3>
+                    <p class="catalog__item-status">в наявності</p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <button href="#" class="product-card__order order-btn">
+                        Замовити розрахунок
+                    </button>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="catalog__item allready-viewed__item product-card">
+                    <img
+                        class="product-card__img"
+                        src="./img/product-image.png"
+                        alt=""
+                        width="182"
+                        height="81"
+                    />
+                    <p class="catalog__item-cat-name">Металочерепиця</p>
+                    <h3 class="catalog__item-name">
+                        <a href="#" class="catalog__item-link">
+                            KATEPAL Mension Black
+                        </a>
+                    </h3>
+                    <p class="catalog__item-status">в наявності</p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <button href="#" class="product-card__order order-btn">
+                        Замовити розрахунок
+                    </button>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+            </ul>
+            <div class="swiper-button-prev swiper-nav"></div>
+            <div class="swiper-button-next swiper-nav"></div>
+
+            <div class="swiper-pagination swiper-nav"></div>
+        </div>
+    </div>
+</section>
+
+
+            </main>
+            <footer class="page__footer page-footer">
+    <div class="container page-footer__container">
+        <div class="page-footer__block page-footer__block--logo">
+            <a href="#" class="page-footer__logo logo">
+                <img class="logo__img" src="../img/logo.png" alt="" />
+            </a>
+
+            <div class="page-footer__work-schedule work-schedule">
+                <p class="work-schedule__item work-schedule__item--title">
+                    Графік роботи:
+                </p>
+                <p class="work-schedule__item work-schedule__item--text">
+                    Пн - Пт: 9:00 - 20:00
+                </p>
+                <p class="work-schedule__item work-schedule__item--text">
+                    Сб - Вс: вихідний
+                </p>
+            </div>
+        </div>
+        <div class="page-footer__block page-footer__block--copyright">
+            <ul class="page-footer__menu footer-menu">
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                        Водостічні системи
+                    </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                        Плівки та мембрани
+                    </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link"> Вікна та люки </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link"> Плити OSB </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link"> Металопрофілі </a>
+                </li>
+            </ul>
+            <ul class="page-footer__socials socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--instagram">
+                        <span class="v-hidden">instagram</span>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--telegram">
+                        <span class="v-hidden">telegram</span>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--facebook">
+                        <span class="v-hidden">facebook</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="page-footer__copyright copyright">
+                &copy; Finkrovlya.com.ua 2021 All rights reserved
+            </p>
+        </div>
+        <div class="page-footer__block page-footer__block--contacts">
+            <ul class="page-footer__contacts contacts">
+                <li
+                    class="
+                        contacts__item
+                        contacts__item--footer
+                        contacts__item--address
+                    "
+                >
+                    <a class="contacts__link">
+                        Харківське шосе, 48В, Київ, 02160
+                    </a>
+                </li>
+                <li
+                    class="
+                        contacts__item
+                        contacts__item--footer
+                        contacts__item--phones
+                    "
+                >
+                    <a class="contacts__link" href="tel:+38(067) 500-06-75">
+                        +38(067) 500-06-75
+                    </a>
+                    <a class="contacts__link" href="tel:+38(050) 833-35-97">
+                        +38(050) 833-35-97
+                    </a>
+                </li>
+                <li
+                    class="
+                        contacts__item
+                        contacts__item--footer
+                        contacts__item--mail
+                    "
+                >
+                    <a
+                        class="contacts__link"
+                        href="mailTo:kocyubnyak@gmail.com"
+                    >
+                        kocyubnyak@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="pop-up">
+    <form class="pop-up__form">
+        <h3 class="pop-up__title">Заявка на розрахунок</h3>
+        <label class="pop-up__label">
+            <input class="pop-up__field" type="text" name="pop-up__user-name" />
+            <span class="pop-up__label-text"> Ваше ім’я </span>
+        </label>
+        <label class="pop-up__label">
+            <input class="pop-up__field" type="tel" name="pop-up__user-tel" />
+            <span class="pop-up__label-text"> Ваш номер телефону </span>
+        </label>
+        <label class="pop-up__label">
+            <input
+                class="pop-up__field"
+                type="email"
+                name="pop-up__user-email"
+            />
+            <span class="pop-up__label-text"> Ваш e-mail </span>
+        </label>
+
+        <input class="pop-up__submit" type="submit" value="Надіслати заявку" />
+    </form>
+
+    <button type="button" class="pop-up__close">
+        <span class="v-hidden"> close pop-up </span>
+    </button>
+</div>
+
+
+        </div>
+        <div class="svg-wrapper">
+    <svg
+        id="house"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M6.35752 0.289165C6.25512 0.209508 6.12908 0.16626 5.99935 0.16626C5.86962 0.16626 5.74358 0.209508 5.64118 0.289165L0.841516 4.0225C0.631026 4.18624 0.460741 4.39592 0.343669 4.63552C0.226596 4.87513 0.165831 5.13832 0.166016 5.405V10.6667C0.166016 10.9761 0.288932 11.2728 0.507725 11.4916C0.726517 11.7104 1.02326 11.8333 1.33268 11.8333H3.66602C3.97544 11.8333 4.27218 11.7104 4.49097 11.4916C4.70977 11.2728 4.83268 10.9761 4.83268 10.6667V7.16666H7.16602V10.6667C7.16602 10.9761 7.28893 11.2728 7.50773 11.4916C7.72652 11.7104 8.02326 11.8333 8.33268 11.8333H10.666C10.9754 11.8333 11.2722 11.7104 11.491 11.4916C11.7098 11.2728 11.8327 10.9761 11.8327 10.6667V5.405C11.8327 5.13822 11.7718 4.87497 11.6545 4.63536C11.5372 4.39575 11.3667 4.18612 11.156 4.0225L6.35752 0.289165Z"
+            fill="black"
+        />
+    </svg>
+</div>
+
+        <script src="./js/main.min.js"></script>
+        <script src="./js/vendor.min.js"></script>
+    </body>
+</html>

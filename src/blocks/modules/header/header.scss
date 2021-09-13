@@ -1,248 +1,252 @@
 .page__header {
-   padding-top: 15px;
-   padding-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
+    &--inner {
+        position: static;
+        background-color: $color-dark;
+    }
 }
 
 .navigation {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .navigation__logo {
-   margin-right: auto;
+    margin-right: auto;
 }
 
 .navigation__menus-wrapper {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 
-   @media (max-width: 768px) {
-      display: none;
+    @media (max-width: 768px) {
+        display: none;
 
-      &--visible {
-         display: flex;
-         flex-direction: column;
-         position: fixed;
-         right: 0;
-         top: 0;
-         z-index: 2;
-         background-color: #fff;
-         padding-top: 80px;
-         padding: 80px 40px 30px 20px;
-         width: 300px;
-         max-width: 100%;
-         height: 80vh;
-      }
-   }
+        &--visible {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            width: 300px;
+            max-width: 100%;
+            height: 80vh;
+            padding: 80px 40px 30px 20px;
+            background-color: #fff;
+            padding-top: 80px;
+        }
+    }
 }
 
 .navigation__menus-burger {
-   display: none;
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 
-   & svg path {
-      stroke-width: 1px;
-      stroke: #000;
-   }
+    & svg path {
+        stroke-width: 1px;
+        stroke: #000;
+    }
 
-   @media (max-width: 768px) {
-      display: block;
-   }
+    @media (max-width: 768px) {
+        display: block;
+    }
 }
 
 .navigation__menus-close {
-   display: none;
+    display: none;
 
-   &--active {
-      display: block;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      position: absolute;
-      right: 15px;
-      top: 30px;
-   }
+    &--active {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
 }
 
 .contacts {
-   @extend .list-reset;
-   display: flex;
+    @extend .list-reset;
+    display: flex;
 }
 
 .navigation__contacts {
-   align-items: center;
-   font-size: 16px;
+    align-items: center;
+    font-size: 16px;
 
-   @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: flex-start;
-   }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .page-footer__contacts {
-   flex-direction: column;
-   align-items: flex-start;
-   font-size: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
 
-   @media (max-width: 768px) {
-      font-size: 16px;
-   }
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .contacts__item {
-   display: inline-flex;
-   padding-left: 45px;
-   position: relative;
+    display: inline-flex;
+    padding-left: 45px;
+    position: relative;
 
-   &::before {
-      content: "";
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-position: center;
-   }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-   &--header {
-      color: $color-white;
+    &--header {
+        color: $color-white;
 
-      &:not(:first-child) {
-         margin-left: 30px;
-      }
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
 
-      @media (max-width: 768px) {
-         color: $color-dark;
-      }
-   }
+        @media (max-width: 768px) {
+            color: $color-dark;
+        }
+    }
 
-   &--footer {
-      color: $color-white;
-   }
+    &--footer {
+        color: $color-white;
+    }
 
-   &--phones {
-      flex-direction: column;
+    &--phones {
+        flex-direction: column;
 
-      &::before {
-         background-image: url(../img/svg/phone-icon.svg);
-         background-size: 30px;
-      }
-      & .contacts__link:not(:last-child) {
-         margin-bottom: 10px;
-      }
-   }
+        &::before {
+            background-image: url(../img/svg/phone-icon.svg);
+            background-size: 30px;
+        }
+        & .contacts__link:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
 
-   &--mail {
-      &::before {
-         background-image: url(../img/svg/email-icon.svg);
-         background-size: 30px;
-      }
-   }
+    &--mail {
+        &::before {
+            background-image: url(../img/svg/email-icon.svg);
+            background-size: 30px;
+        }
+    }
 
-   &--address {
-      &::before {
-         background-image: url(../img/svg/location-icon.svg);
-         background-size: 22.5px;
-      }
-   }
+    &--address {
+        &::before {
+            background-image: url(../img/svg/location-icon.svg);
+            background-size: 22.5px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
-   .contacts__item--header {
-      margin-bottom: 20px;
-      &:not(:first-child) {
-         margin-left: 0;
-      }
+    .contacts__item--header {
+        margin-bottom: 20px;
+        &:not(:first-child) {
+            margin-left: 0;
+        }
 
-      &.contacts__item--phones {
-         &::before {
-            background-image: url(../img/svg/phone-icon--black.svg);
-         }
-      }
+        &.contacts__item--phones {
+            &::before {
+                background-image: url(../img/svg/phone-icon--black.svg);
+            }
+        }
 
-      &.contacts__item--mail {
-         &::before {
-            background-image: url(../img/svg/email-icon--black.svg);
-         }
-      }
-      // &.contacts__item--address {
-      //    &::before {
-      //       background-image: url(../img/svg/location-icon--black.svg);
-      //    }
-      // }
-   }
+        &.contacts__item--mail {
+            &::before {
+                background-image: url(../img/svg/email-icon--black.svg);
+            }
+        }
+        // &.contacts__item--address {
+        //    &::before {
+        //       background-image: url(../img/svg/location-icon--black.svg);
+        //    }
+        // }
+    }
 }
 
 .contacts__link {
-   line-height: 20px;
-   text-decoration: none;
-   color: inherit;
-   position: relative;
+    line-height: 20px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
 
-   &::after {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-   }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
 
-   &:hover {
-      opacity: 0.7;
-   }
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .navigation__lang-switcher {
-   margin-left: 32px;
+    margin-left: 32px;
 }
 
 .lang-switcher {
-   @extend .list-reset;
+    @extend .list-reset;
 }
 
 .lang-switcher__item {
-   display: flex;
+    display: flex;
 }
 
 .lang-switcher__link {
-   font-size: 20px;
-   line-height: 23px;
-   text-transform: uppercase;
-   color: $color-white;
-   padding: 3px 10px;
-   border: 1px solid transparent;
-   transition: background-color 0.4s, color 0.4s;
+    border: 1px solid transparent;
+    padding: 3px 10px;
+    transition: background-color 0.4s, color 0.4s;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: $color-white;
 
-   &--active {
-      border: 1px solid $color-white;
-      border-radius: 15px;
+    @media (max-width: 768px) {
+        color: $color-dark;
+    }
 
-      &:hover {
-         background-color: $color-white;
-         color: $color-black;
-      }
+    &:hover {
+        border: 1px solid $color-white;
+        border-radius: 15px;
+    }
 
-      @media (max-width: 768px) {
-         border-color: $color-dark;
-      }
-   }
+    &--active {
+        border: 1px solid $color-white;
+        border-radius: 15px;
 
-   &:hover {
-      border: 1px solid $color-white;
-      border-radius: 15px;
-   }
+        @media (max-width: 768px) {
+            border-color: $color-dark;
+        }
 
-   @media (max-width: 768px) {
-      color: $color-dark;
-   }
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
 }

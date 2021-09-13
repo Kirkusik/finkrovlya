@@ -1,121 +1,107 @@
 <section class="section photo-gallery">
-   <div class="container">
-      <h2 class="section__title section__title--dark photo-gallery__title">
-         Фотогалерея
-      </h2>
-   </div>
+    <div class="container">
+        <h2 class="section__title section__title--dark photo-gallery__title">
+            Фотогалерея
+        </h2>
+        <div
+            class="photo-gallery__slider"
+            style="
+                --swiper-navigation-color: #fff;
+                --swiper-navigation-size: 30px;
+                --swiper-pagination-color: #ff2626;
+            "
+        >
+            <ul class="photo-gallery__list photo-gallery__slider-wrapper">
+                <li class="photo-gallery__item">
+                    <img
+                        src="./img/gallery/photo-gallery-img-1.jpg"
+                        alt=""
+                        class="photo-gallery__item-img"
+                        width="370"
+                        height="200"
+                    />
+                    <h3 class="photo-gallery__item-title">Металочерепиця</h3>
+                    <a href="#" class="photo-gallery__item-link read-more">
+                        Дивитись більше
+                    </a>
+                </li>
+                <li class="photo-gallery__item">
+                    <img
+                        src="./img/gallery/photo-gallery-img-1.jpg"
+                        alt=""
+                        class="photo-gallery__item-img"
+                        width="370"
+                        height="200"
+                    />
+                    <h3 class="photo-gallery__item-title">Металочерепиця</h3>
+                    <a href="#" class="photo-gallery__item-link read-more">
+                        Дивитись більше
+                    </a>
+                </li>
+                <li class="photo-gallery__item">
+                    <img
+                        src="./img/gallery/photo-gallery-img-1.jpg"
+                        alt=""
+                        class="photo-gallery__item-img"
+                        width="370"
+                        height="200"
+                    />
+                    <h3 class="photo-gallery__item-title">Металочерепиця</h3>
+                    <a href="#" class="photo-gallery__item-link read-more">
+                        Дивитись більше
+                    </a>
+                </li>
+            </ul>
+            <div class="swiper-button-prev swiper-nav"></div>
+            <div class="swiper-button-next swiper-nav"></div>
 
-   <ul class="photo-gallery__list">
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
+            <div class="swiper-pagination swiper-nav"></div>
+        </div>
+    </div>
+
+    <div class="cta-gallery">
+        <div class="container">
             <img
-               src="./img/gallery/photo-gallery-img-1.jpg"
-               alt=""
-               class="photo-gallery__img"
+                src="./img/cta-gallery-worker.png"
+                alt=""
+                class="cta-gallery__worker"
+                aria-hidden="true"
             />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-2.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-3.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-4.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-5.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-6.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-7.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-8.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-9.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-10.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-11.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-12.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-   </ul>
-   <h1 class="gal-slider-text">
-      Будет в виде слайдера на планшетах и мобильных
-   </h1>
+            <form class="cta-gallery__form form">
+                <div class="cta-gallery__header">
+                    <p class="cta-gallery__form-title">
+                        Хочете отримати знижку?
+                    </p>
+                    <p class="cta-gallery__form-subtitle">
+                        залиште заяву та отримайте знижку
+                    </p>
+                </div>
+                <label class="form__label cta-gallery__label" for="name">
+                    Ім’я
+                    <input
+                        class="form__element cta-gallery__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder=""
+                    />
+                </label>
+                <label class="form__label cta-gallery__label" for="name">
+                    Номер телефону
+                    <input
+                        class="form__element cta-gallery__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder=""
+                    />
+                </label>
+                <input
+                    class="form__submit form__submit--dark cta-gallery__submit"
+                    type="submit"
+                    value="Замовити дзвінок"
+                />
+            </form>
+        </div>
+    </div>
 </section>

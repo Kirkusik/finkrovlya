@@ -1,0 +1,30 @@
+.pagination__list {
+    @extend .list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pagination__item {
+    display: inline-flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+
+        &::after {
+            content: "/";
+            margin-left: 6px;
+        }
+    }
+}
+
+.pagination__link {
+    font-size: 12px;
+    line-height: 14px;
+
+    color: $color-black;
+}

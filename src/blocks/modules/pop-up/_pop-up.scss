@@ -1,0 +1,93 @@
+.pop-up {
+    display: none;
+    position: fixed;
+    z-index: 22;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    max-width: 100%;
+    padding: 20px 36px;
+    transform: translate(-50%, -50%);
+    background-color: $color-white;
+    border-radius: 20px;
+    text-align: center;
+
+    &--active {
+        display: block;
+    }
+}
+
+.pop-up__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../img/svg/pop-up-close.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.pop-up__title {
+    font-size: 23px;
+    line-height: 27px;
+    color: $color-black;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.pop-up__label {
+    display: block;
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.pop-up__label-text {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: rgba(0, 0, 0, 0.5);
+    transition: font-size 0.4s, bottom 0.4s;
+}
+
+.pop-up__field {
+    padding-top: 10px;
+    width: 100%;
+    border: 0.5px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.pop-up__field:focus + .pop-up__label-text,
+.pop-up:not(:empty):focus-within + .pop-up__label-text {
+    font-size: 15px;
+    line-height: 18px;
+
+    color: rgba(0, 0, 0, 0.5);
+    bottom: 100%;
+}
+
+.pop-up__submit {
+    font-size: 22px;
+    line-height: 26px;
+
+    color: $color-white;
+    width: 272px;
+    height: 41px;
+
+    background-color: $color-red;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}

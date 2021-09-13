@@ -1,200 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Finkrovlya</title>
-      <meta name="theme-color" content="#fff" />
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Finkrovlya</title>
+        <meta name="theme-color" content="#fff" />
 
-      <meta
-	name="apple-mobile-web-app-status-bar-style"
-	content="black-translucent"
+        <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./img/favicons/apple-touch-icon.png"
 />
 <link
-	rel="shortcut icon"
-	href="../img/favicons/favicon.ico"
-	type="image/x-icon"
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./img/favicons/favicon-32x32.png"
 />
 <link
-	rel="icon"
-	sizes="16x16"
-	href="../img/favicons/favicon-16x16.png"
-	type="image/png"
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./img/favicons/favicon-16x16.png"
 />
+<link rel="manifest" href="./img/favicons/site.webmanifest" />
 <link
-	rel="icon"
-	sizes="32x32"
-	href="../img/favicons/favicon-32x32.png"
-	type="image/png"
+    rel="mask-icon"
+    href="./img/favicons/safari-pinned-tab.svg"
+    color="#5bbad5"
 />
-<link
-	rel="apple-touch-icon-precomposed"
-	href="../img/favicons/apple-touch-icon-precomposed.png"
-/>
-<link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png" />
-<link
-	rel="apple-touch-icon"
-	sizes="57x57"
-	href="../img/favicons/apple-touch-icon-57x57.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="60x60"
-	href="../img/favicons/apple-touch-icon-60x60.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="72x72"
-	href="../img/favicons/apple-touch-icon-72x72.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="76x76"
-	href="../img/favicons/apple-touch-icon-76x76.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="114x114"
-	href="../img/favicons/apple-touch-icon-114x114.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="120x120"
-	href="../img/favicons/apple-touch-icon-120x120.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="144x144"
-	href="../img/favicons/apple-touch-icon-144x144.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="152x152"
-	href="../img/favicons/apple-touch-icon-152x152.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="167x167"
-	href="../img/favicons/apple-touch-icon-167x167.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="180x180"
-	href="../img/favicons/apple-touch-icon-180x180.png"
-/>
-<link
-	rel="apple-touch-icon"
-	sizes="1024x1024"
-	href="../img/favicons/apple-touch-icon-1024x1024.png"
-/>
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
 
-      <meta
-         name="viewport"
-         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
 
-      <link rel="stylesheet" href="./styles/main.min.css" />
-   </head>
-   <body class="page__body">
-      <header class="page__header">
-   <div class="container">
-      <nav class="page__nav navigation">
-         <a href="#" class="navigation__logo logo">
-            <img class="logo__img" src="./img/logo.png" alt="" />
-         </a>
+        <link rel="stylesheet" href="./styles/main.min.css" />
+    </head>
+    <body class="page__body">
+        <div class="page__wrapper">
+            <header class="page__header page__header--inner">
+    <div class="container">
+        <nav class="page__nav navigation">
+            <a href="#" class="navigation__logo logo">
+                <img class="logo__img" src="./img/logo.png" alt="" />
+            </a>
 
-         <button
-            class="navigation__menus-burger"
-            type="button"
-            aria-label="Show Navigation Menu"
-            aria-expanded="false"
-            tabindex="0"
-         >
-            <svg
-               width="40px"
-               aria-hidden="true"
-               viewBox="0 0 384.97 384.97"
-               xmlns="http://www.w3.org/2000/svg"
-               fill="#fff"
-            >
-               <path
-                  d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
-			C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"
-               />
-               <path
-                  d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
-			S379.58,180.455,372.939,180.455z"
-               />
-               <path
-                  d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
-			c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"
-               />
-            </svg>
-         </button>
-         <div class="navigation__menus-wrapper">
             <button
-               class="navigation__menus-close"
-               aria-label="Hide Navigation Menu"
+                class="navigation__menus-burger"
+                type="button"
+                aria-label="Show Navigation Menu"
+                aria-expanded="false"
+                tabindex="0"
             >
-               <svg
-                  aria-hidden="true"
-                  width="40px"
-                  height="40px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-               >
-                  <path
-                     d="M6.22566 4.81096C5.83514 4.42044 5.20197 4.42044 4.81145 4.81096C4.42092 5.20148 4.42092 5.83465 4.81145 6.22517L10.5862 11.9999L4.81151 17.7746C4.42098 18.1651 4.42098 18.7983 4.81151 19.1888C5.20203 19.5793 5.8352 19.5793 6.22572 19.1888L12.0004 13.4141L17.7751 19.1888C18.1656 19.5793 18.7988 19.5793 19.1893 19.1888C19.5798 18.7983 19.5798 18.1651 19.1893 17.7746L13.4146 11.9999L19.1893 6.22517C19.5799 5.83465 19.5799 5.20148 19.1893 4.81096C18.7988 4.42044 18.1657 4.42044 17.7751 4.81096L12.0004 10.5857L6.22566 4.81096Z"
-                     fill="black"
-                  />
-               </svg>
+                <svg
+                    width="40px"
+                    aria-hidden="true"
+                    viewBox="0 0 384.97 384.97"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                >
+                    <path
+                        d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+			C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"
+                    />
+                    <path
+                        d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+			S379.58,180.455,372.939,180.455z"
+                    />
+                    <path
+                        d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+			c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"
+                    />
+                </svg>
             </button>
-            <ul class="navigation__contacts contacts">
-               <li
-                  class="
-                     contacts__item
-                     contacts__item--header
-                     contacts__item--phones
-                  "
-               >
-                  <a class="contacts__link" href="tel:+38(067) 500-06-75">
-                     +38(067) 500-06-75
-                  </a>
-                  <a class="contacts__link" href="tel:+38(050) 833-35-97">
-                     +38(050) 833-35-97
-                  </a>
-               </li>
-               <li
-                  class="
-                     contacts__item contacts__item--header contacts__item--mail
-                  "
-               >
-                  <a class="contacts__link" href="mailTo:kocyubnyak@gmail.com">
-                     kocyubnyak@gmail.com
-                  </a>
-               </li>
-            </ul>
-            <ul class="navigation__lang-switcher lang-switcher">
-               <li class="lang-switcher__item">
-                  <a class="lang-switcher__link" href="">ru</a>
-               </li>
-               <li class="lang-switcher__item">
-                  <a
-                     class="lang-switcher__link lang-switcher__link--active"
-                     href=""
-                  >
-                     ua
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </nav>
-   </div>
+            <div class="navigation__menus-wrapper">
+                <button
+                    class="navigation__menus-close"
+                    aria-label="Hide Navigation Menu"
+                >
+                    <svg
+                        aria-hidden="true"
+                        width="40px"
+                        height="40px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M6.22566 4.81096C5.83514 4.42044 5.20197 4.42044 4.81145 4.81096C4.42092 5.20148 4.42092 5.83465 4.81145 6.22517L10.5862 11.9999L4.81151 17.7746C4.42098 18.1651 4.42098 18.7983 4.81151 19.1888C5.20203 19.5793 5.8352 19.5793 6.22572 19.1888L12.0004 13.4141L17.7751 19.1888C18.1656 19.5793 18.7988 19.5793 19.1893 19.1888C19.5798 18.7983 19.5798 18.1651 19.1893 17.7746L13.4146 11.9999L19.1893 6.22517C19.5799 5.83465 19.5799 5.20148 19.1893 4.81096C18.7988 4.42044 18.1657 4.42044 17.7751 4.81096L12.0004 10.5857L6.22566 4.81096Z"
+                            fill="black"
+                        />
+                    </svg>
+                </button>
+                <ul class="navigation__contacts contacts">
+                    <li
+                        class="
+                            contacts__item
+                            contacts__item--header
+                            contacts__item--phones
+                        "
+                    >
+                        <a class="contacts__link" href="tel:+38(067) 500-06-75">
+                            +38(067) 500-06-75
+                        </a>
+                        <a class="contacts__link" href="tel:+38(050) 833-35-97">
+                            +38(050) 833-35-97
+                        </a>
+                    </li>
+                    <li
+                        class="
+                            contacts__item
+                            contacts__item--header
+                            contacts__item--mail
+                        "
+                    >
+                        <a
+                            class="contacts__link"
+                            href="mailTo:kocyubnyak@gmail.com"
+                        >
+                            kocyubnyak@gmail.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navigation__lang-switcher lang-switcher">
+                    <li class="lang-switcher__item">
+                        <a
+                            class="
+                                lang-switcher__link lang-switcher__link--active
+                            "
+                            href=""
+                            >ru</a
+                        >
+                    </li>
+                    <li class="lang-switcher__item">
+                        <a class="lang-switcher__link" href=""> ua </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
 
-      <main class="page__main">
-         <section class="home-hero">
+            <main class="page__main">
+                <section class="home-hero">
    <div class="container home-hero__container">
       <h2 class="home-hero__title">Покрівельний маркет</h2>
       <p class="home-hero__subtitle">Надійно, якісно, професійно</p>
@@ -225,223 +176,281 @@
 </section>
 
 <section class="section home-sales">
-   <div class="container">
-      <h2 class="home-sales__title section__title section__title--light">
-         Знижки та пропозиції
-      </h2>
+    <div class="container">
+        <h2 class="home-sales__title section__title section__title--light">
+            Знижки та пропозиції
+        </h2>
 
-      <ul class="home-sales__slider">
-         <li class="home-sales__slide sales-slide">
-            <img
-               src="./img/product-image.jpg"
-               alt="product image"
-               class="sales-slide__img"
-               width="220"
-            />
-            <p class="sales-slide__category">Металочерепиця</p>
-            <h3 class="sales-slide__title">RUUKKI Frigge</h3>
-            <p class="sales-slide__description">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-               provident, maxime illo sit, hic repellendus sed quisquam nulla
-               voluptatibus est nam odit harum dicta, fugit sunt? Pariatur
-               labore repellendus qui.
-            </p>
-            <p class="sales-slide__prices">
-               <span class="sales-slide__old-price">200 грн/м²</span>
-               <span class="sales-slide__new-price">190 грн/м²</span>
-            </p>
-            <a href="#" class="sales-slide__goto-btn goto-product">
-               Перети до товару
-            </a>
-            <p class="sale-slide__date">Акція дійсна з 14.06.21 по 21.06.21</p>
-         </li>
-         <li class="home-sales__slide sales-slide">
-            <img
-               src="./img/product-image.jpg"
-               alt="product image"
-               class="sales-slide__img"
-               width="220"
-            />
-            <p class="sales-slide__category">Металочерепиця</p>
-            <h3 class="sales-slide__title">RUUKKI Frigge</h3>
-            <p class="sales-slide__description">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-               provident, maxime illo sit, hic repellendus sed quisquam nulla
-               voluptatibus est nam odit harum dicta, fugit sunt? Pariatur
-               labore repellendus qui.
-            </p>
-            <p class="sales-slide__prices">
-               <span class="sales-slide__old-price">200 грн/м²</span>
-               <span class="sales-slide__new-price">190 грн/м²</span>
-            </p>
-            <a href="#" class="sales-slide__goto-btn goto-product">
-               Перети до товару
-            </a>
-            <p class="sale-slide__date">Акція дійсна з 14.06.21 по 21.06.21</p>
-         </li>
-         <li class="home-sales__slide sales-slide">
-            <img
-               src="./img/product-image.jpg"
-               alt="product image"
-               class="sales-slide__img"
-               width="220"
-            />
-            <p class="sales-slide__category">Металочерепиця</p>
-            <h3 class="sales-slide__title">RUUKKI Frigge</h3>
-            <p class="sales-slide__description">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-               provident, maxime illo sit, hic repellendus sed quisquam nulla
-               voluptatibus est nam odit harum dicta, fugit sunt? Pariatur
-               labore repellendus qui.
-            </p>
-            <p class="sales-slide__prices">
-               <span class="sales-slide__old-price">200 грн/м²</span>
-               <span class="sales-slide__new-price">190 грн/м²</span>
-            </p>
-            <a href="#" class="sales-slide__goto-btn goto-product">
-               Перети до товару
-            </a>
-            <p class="sale-slide__date">Акція дійсна з 14.06.21 по 21.06.21</p>
-         </li>
-      </ul>
-   </div>
+        <div
+            class="saler-slider product-slider"
+            id="sales-slider"
+            style="
+                --swiper-navigation-color: #fff;
+                --swiper-navigation-size: 30px;
+                --swiper-pagination-color: #ff2626;
+            "
+        >
+            <ul class="home-sales__slider sales-slider-wrapper">
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+            </ul>
+            <div class="swiper-button-prev swiper-nav"></div>
+            <div class="swiper-button-next swiper-nav"></div>
+
+            <div class="swiper-pagination swiper-nav"></div>
+        </div>
+    </div>
 </section>
 
 <section class="section about-company">
-   <div class="container">
-      <h2 class="about-company__title section__title section__title--dark">
-         Про компанію
-      </h2>
+    <div class="container">
+        <h2 class="about-company__title section__title section__title--dark">
+            Про компанію
+        </h2>
 
-      <article class="about-company__block">
-         <img
-            class="about-company__block-img"
-            src="./img/company-history.jpg"
-            alt=""
-            width="570"
-            height="320"
-         />
-         <div class="about-company__block-description">
-            <h3 class="about-company__block-title">Історія заснування</h3>
-            <p class="about-company__block-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Aspernatur beatae sit recusandae neque fuga quis cumque! Hic, sed
-               quam? Magnam aliquid, sed explicabo iure iste placeat voluptatum
-               unde at eum?
-            </p>
-            <p class="about-company__block-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Aspernatur beatae sit recusandae neque fuga quis cumque! Hic, sed
-               quam? Magnam aliquid, sed explicabo iure iste placeat voluptatum
-               unde at eum?
-            </p>
-         </div>
-      </article>
+        <article class="about-company__block">
+            <img
+                class="about-company__block-img"
+                src="./img/company-history.jpg"
+                alt=""
+                width="570"
+                height="320"
+            />
+            <div class="about-company__block-description">
+                <h3 class="about-company__block-title">Історія заснування</h3>
+                <div class="about-company__block-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur beatae sit recusandae neque fuga quis cumque!
+                        Hic, sed quam? Magnam aliquid, sed explicabo iure iste
+                        placeat voluptatum unde at eum?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur beatae sit recusandae neque fuga quis cumque!
+                        Hic, sed quam? Magnam aliquid, sed explicabo iure iste
+                        placeat voluptatum unde at eum?
+                    </p>
+                </div>
+            </div>
+        </article>
 
-      <article class="about-company__block">
-         <div class="about-company__block-description">
-            <h3 class="about-company__block-title">З ким ми працюємо</h3>
-            <p class="about-company__block-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Aspernatur beatae sit recusandae neque fuga quis cumque! Hic, sed
-               quam? Magnam aliquid, sed explicabo iure iste placeat voluptatum
-               unde at eum?
-            </p>
-            <p class="about-company__block-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Aspernatur beatae sit recusandae neque fuga quis cumque! Hic, sed
-               quam? Magnam aliquid, sed explicabo iure iste placeat voluptatum
-               unde at eum?
-            </p>
-         </div>
-         <img
-            class="about-company__block-img"
-            src="./img/company-partnership.jpg"
-            alt=""
-            width="570"
-            height="320"
-         />
-      </article>
-   </div>
+        <article class="about-company__block">
+            <div class="about-company__block-description">
+                <h3 class="about-company__block-title">З ким ми працюємо</h3>
+                <div class="about-company__block-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur beatae sit recusandae neque fuga quis cumque!
+                        Hic, sed quam? Magnam aliquid, sed explicabo iure iste
+                        placeat voluptatum unde at eum?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur beatae sit recusandae neque fuga quis cumque!
+                        Hic, sed quam? Magnam aliquid, sed explicabo iure iste
+                        placeat voluptatum unde at eum?
+                    </p>
+                </div>
+            </div>
+            <img
+                class="about-company__block-img"
+                src="./img/company-partnership.jpg"
+                alt=""
+                width="570"
+                height="320"
+            />
+        </article>
+    </div>
 </section>
 
 <section class="section exellents">
-   <div class="container">
-      <h2 class="section__title section__title--dark exellents__title">
-         Наші переваги
-      </h2>
-      <ul class="exellents__list">
-         <li class="exellents__item">
-            <img
-               src="./img/svg/warranty-icon.svg"
-               alt=""
-               class="exellents__item-img"
-               width="60"
-               height="60"
-            />
-            <p class="exellents__item-title">Гарантія від 15 років</p>
-            <p class="exellents__item-desc">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-               eos quod officia quae, odit provident hic ullam eveniet qui ut
-               quisquam iusto voluptatibus nostrum et animi cumque sint ab in!
-            </p>
-         </li>
-         <li class="exellents__item">
-            <img
-               src="./img/svg/medal-icon.svg"
-               alt=""
-               class="exellents__item-img"
-               width="60"
-               height="60"
-            />
-            <p class="exellents__item-title">Контроль якості</p>
-            <p class="exellents__item-desc">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-               eos quod officia quae, odit provident hic ullam eveniet qui ut
-               quisquam iusto voluptatibus nostrum et animi cumque sint ab in!
-            </p>
-         </li>
-         <li class="exellents__item">
-            <img
-               src="./img/svg/user-experience-icon.svg"
-               alt=""
-               class="exellents__item-img"
-               width="60"
-               height="60"
-            />
-            <p class="exellents__item-title">Досвід - більше 15 років</p>
-            <p class="exellents__item-desc">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-               eos quod officia quae, odit provident hic ullam eveniet qui ut
-               quisquam iusto voluptatibus nostrum et animi cumque sint ab in!
-            </p>
-         </li>
-         <li class="exellents__item">
-            <img
-               src="./img/svg/factory-icon.svg"
-               alt=""
-               class="exellents__item-img"
-               width="60"
-               height="60"
-            />
-            <p class="exellents__item-title">
-               Термін експлуатації - від 20 років
-            </p>
-            <p class="exellents__item-desc">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-               eos quod officia quae, odit provident hic ullam eveniet qui ut
-               quisquam iusto voluptatibus nostrum et animi cumque sint ab in!
-            </p>
-         </li>
-         <li class="exellents__item">
-            <img
-               src="./img/exellents-img.jpg"
-               alt=""
-               class="exellents__img--big"
-            />
-         </li>
-      </ul>
-   </div>
+    <div class="container">
+        <h2 class="section__title section__title--dark exellents__title">
+            Наші переваги
+        </h2>
+        <ul class="exellents__list">
+            <li class="exellents__item">
+                <img
+                    src="./img/svg/excellent-icon-1.svg"
+                    alt=""
+                    class="exellents__item-img"
+                    width="60"
+                    height="60"
+                />
+                <p class="exellents__item-title">Гарантія від 15 років</p>
+                <p class="exellents__item-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus eos quod officia quae, odit provident hic ullam
+                    eveniet qui ut quisquam iusto voluptatibus nostrum et animi
+                    cumque sint ab in!
+                </p>
+            </li>
+            <li class="exellents__item">
+                <img
+                    src="./img/svg/excellent-icon-2.svg"
+                    alt=""
+                    class="exellents__item-img"
+                    width="60"
+                    height="60"
+                />
+                <p class="exellents__item-title">Контроль якості</p>
+                <p class="exellents__item-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus eos quod officia quae, odit provident hic ullam
+                    eveniet qui ut quisquam iusto voluptatibus nostrum et animi
+                    cumque sint ab in!
+                </p>
+            </li>
+            <li class="exellents__item">
+                <img
+                    src="./img/svg/excellent-icon-3.svg"
+                    alt=""
+                    class="exellents__item-img"
+                    width="60"
+                    height="60"
+                />
+                <p class="exellents__item-title">Досвід - більше 15 років</p>
+                <p class="exellents__item-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus eos quod officia quae, odit provident hic ullam
+                    eveniet qui ut quisquam iusto voluptatibus nostrum et animi
+                    cumque sint ab in!
+                </p>
+            </li>
+            <li class="exellents__item">
+                <img
+                    src="./img/svg/excellent-icon-4.svg"
+                    alt=""
+                    class="exellents__item-img"
+                    width="60"
+                    height="60"
+                />
+                <p class="exellents__item-title">
+                    Термін експлуатації - від 20 років
+                </p>
+                <p class="exellents__item-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus eos quod officia quae, odit provident hic ullam
+                    eveniet qui ut quisquam iusto voluptatibus nostrum et animi
+                    cumque sint ab in!
+                </p>
+            </li>
+            <li class="exellents__item">
+                <img
+                    src="./img/exellents-img.jpg"
+                    alt=""
+                    class="exellents__img--big"
+                />
+            </li>
+        </ul>
+    </div>
 </section>
 
 <section class="section products">
@@ -532,180 +541,214 @@
 </section>
 
 <section class="section services">
-   <div class="container">
-      <h2 class="section__title section__title--dark services__title">
-         Наші послуги
-      </h2>
+    <div class="container">
+        <h2 class="section__title section__title--dark services__title">
+            Наші послуги
+        </h2>
 
-      <ul class="services__list">
-         <li class="services__item service">
-            <img src="./img/service-img-1.jpg" alt="" class="service__img" />
-            <h3 class="service__title">Монтаж металочерепиці</h3>
-            <p class="service__desc">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-               exercitationem voluptate dolore architecto est, porro totam aut
-               fuga repellendus optio dolorem aperiam dolores amet tempora
-               officiis minima, voluptatem quos eum!
-            </p>
-            <p class="service__price">від 300 грн/м²</p>
-            <a class="read-more service__actionBtn" href="">
-               Дізнатися більше
-            </a>
-         </li>
-         <li class="services__item service">
-            <img src="./img/service-img-2.jpg" alt="" class="service__img" />
-            <h3 class="service__title">Монтаж бітумної черепиці</h3>
-            <p class="service__desc">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-               exercitationem voluptate dolore architecto est, porro totam aut
-               fuga repellendus optio dolorem aperiam dolores amet tempora
-               officiis minima, voluptatem quos eum!
-            </p>
-            <p class="service__price">від 350 грн/м²</p>
-            <a class="read-more service__actionBtn" href="">
-               Дізнатися більше
-            </a>
-         </li>
-         <li class="services__item service">
-            <img src="./img/service-img-3.jpg" alt="" class="service__img" />
-            <h3 class="service__title">Реставрація старої покрівлі</h3>
-            <p class="service__desc">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-               exercitationem voluptate dolore architecto est, porro totam aut
-               fuga repellendus optio dolorem aperiam dolores amet tempora
-               officiis minima, voluptatem quos eum!
-            </p>
-            <p class="service__price">від 250 грн/м²</p>
-            <a class="read-more service__actionBtn" href="">
-               Дізнатися більше
-            </a>
-         </li>
-      </ul>
-   </div>
+        <ul class="services__list">
+            <li class="services__item service">
+                <img
+                    src="./img/service-img-1.jpg"
+                    alt=""
+                    class="service__img"
+                />
+                <h3 class="service__title">Монтаж металочерепиці</h3>
+                <p class="service__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    exercitationem voluptate dolore architecto est, porro totam
+                    aut fuga repellendus optio dolorem aperiam dolores amet
+                    tempora officiis minima, voluptatem quos eum!
+                </p>
+                <p class="service__price">від 300 грн/м²</p>
+                <a class="read-more service__actionBtn" href="">
+                    Дізнатися більше
+                </a>
+            </li>
+            <li class="services__item service">
+                <img
+                    src="./img/service-img-2.jpg"
+                    alt=""
+                    class="service__img"
+                />
+                <h3 class="service__title">Монтаж бітумної черепиці</h3>
+                <p class="service__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    exercitationem voluptate dolore architecto est, porro totam
+                    aut fuga repellendus optio dolorem aperiam dolores amet
+                    tempora officiis minima, voluptatem quos eum!
+                </p>
+                <p class="service__price">від 350 грн/м²</p>
+                <a class="read-more service__actionBtn" href="">
+                    Дізнатися більше
+                </a>
+            </li>
+            <li class="services__item service">
+                <img
+                    src="./img/service-img-3.jpg"
+                    alt=""
+                    class="service__img"
+                />
+                <h3 class="service__title">Реставрація старої покрівлі</h3>
+                <p class="service__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    exercitationem voluptate dolore architecto est, porro totam
+                    aut fuga repellendus optio dolorem aperiam dolores amet
+                    tempora officiis minima, voluptatem quos eum!
+                </p>
+                <p class="service__price">від 250 грн/м²</p>
+                <a class="read-more service__actionBtn" href="">
+                    Дізнатися більше
+                </a>
+            </li>
+        </ul>
+
+        <div class="cta-services">
+            <img
+                src="./img/cta-service-worker.png"
+                alt=""
+                class="cta-services__worker"
+                aria-hidden="true"
+            />
+            <form class="cta-services__form form">
+                <p class="cta-services__form-title">Дізнатись більше</p>
+                <label class="form__label cta-services__label" for="name">
+                    Ім’я
+                    <input
+                        class="form__element cta-services__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder=""
+                    />
+                </label>
+                <label class="form__label cta-services__label" for="name">
+                    Номер телефону
+                    <input
+                        class="form__element cta-services__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder=""
+                    />
+                </label>
+                <input
+                    class="form__submit form__submit--red cta-services__submit"
+                    type="submit"
+                    value="Замовити дзвінок"
+                />
+            </form>
+        </div>
+    </div>
 </section>
 
 <section class="section photo-gallery">
-   <div class="container">
-      <h2 class="section__title section__title--dark photo-gallery__title">
-         Фотогалерея
-      </h2>
-   </div>
+    <div class="container">
+        <h2 class="section__title section__title--dark photo-gallery__title">
+            Фотогалерея
+        </h2>
+        <div
+            class="photo-gallery__slider"
+            style="
+                --swiper-navigation-color: #fff;
+                --swiper-navigation-size: 30px;
+                --swiper-pagination-color: #ff2626;
+            "
+        >
+            <ul class="photo-gallery__list photo-gallery__slider-wrapper">
+                <li class="photo-gallery__item">
+                    <img
+                        src="./img/gallery/photo-gallery-img-1.jpg"
+                        alt=""
+                        class="photo-gallery__item-img"
+                        width="370"
+                        height="200"
+                    />
+                    <h3 class="photo-gallery__item-title">Металочерепиця</h3>
+                    <a href="#" class="photo-gallery__item-link read-more">
+                        Дивитись більше
+                    </a>
+                </li>
+                <li class="photo-gallery__item">
+                    <img
+                        src="./img/gallery/photo-gallery-img-1.jpg"
+                        alt=""
+                        class="photo-gallery__item-img"
+                        width="370"
+                        height="200"
+                    />
+                    <h3 class="photo-gallery__item-title">Металочерепиця</h3>
+                    <a href="#" class="photo-gallery__item-link read-more">
+                        Дивитись більше
+                    </a>
+                </li>
+                <li class="photo-gallery__item">
+                    <img
+                        src="./img/gallery/photo-gallery-img-1.jpg"
+                        alt=""
+                        class="photo-gallery__item-img"
+                        width="370"
+                        height="200"
+                    />
+                    <h3 class="photo-gallery__item-title">Металочерепиця</h3>
+                    <a href="#" class="photo-gallery__item-link read-more">
+                        Дивитись більше
+                    </a>
+                </li>
+            </ul>
+            <div class="swiper-button-prev swiper-nav"></div>
+            <div class="swiper-button-next swiper-nav"></div>
 
-   <ul class="photo-gallery__list">
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
+            <div class="swiper-pagination swiper-nav"></div>
+        </div>
+    </div>
+
+    <div class="cta-gallery">
+        <div class="container">
             <img
-               src="./img/gallery/photo-gallery-img-1.jpg"
-               alt=""
-               class="photo-gallery__img"
+                src="./img/cta-gallery-worker.png"
+                alt=""
+                class="cta-gallery__worker"
+                aria-hidden="true"
             />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-2.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-3.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-4.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-5.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-6.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-7.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-8.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-9.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-10.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-11.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-      <li class="photo-gallery__item">
-         <a href="#" class="photo-gallery__link">
-            <img
-               src="./img/gallery/photo-gallery-img-12.jpg"
-               alt=""
-               class="photo-gallery__img"
-            />
-         </a>
-      </li>
-   </ul>
-   <h1 class="gal-slider-text">
-      Будет в виде слайдера на планшетах и мобильных
-   </h1>
+            <form class="cta-gallery__form form">
+                <div class="cta-gallery__header">
+                    <p class="cta-gallery__form-title">
+                        Хочете отримати знижку?
+                    </p>
+                    <p class="cta-gallery__form-subtitle">
+                        залиште заяву та отримайте знижку
+                    </p>
+                </div>
+                <label class="form__label cta-gallery__label" for="name">
+                    Ім’я
+                    <input
+                        class="form__element cta-gallery__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder=""
+                    />
+                </label>
+                <label class="form__label cta-gallery__label" for="name">
+                    Номер телефону
+                    <input
+                        class="form__element cta-gallery__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder=""
+                    />
+                </label>
+                <input
+                    class="form__submit form__submit--dark cta-gallery__submit"
+                    type="submit"
+                    value="Замовити дзвінок"
+                />
+            </form>
+        </div>
+    </div>
 </section>
-
 
 <section class="section delivery">
    <div class="container">
@@ -739,69 +782,12 @@
    </div>
 </section>
 
+<section class="contact">
+   <div class="container">
+      <div class="contact__text">
+         <h2 class="contact__office-title">Головний офіс</h2>
 
-
-      </main>
-      <footer class="page__footer page-footer">
-   <div class="container page-footer__container">
-      <div class="page-footer__block page-footer__block--logo">
-         <a href="#" class="page-footer__logo logo">
-            <img class="logo__img" src="../img/logo.png" alt="" />
-         </a>
-
-         <div class="page-footer__work-schedule work-schedule">
-            <p class="work-schedule__item work-schedule__item--title">
-               Графік роботи:
-            </p>
-            <p class="work-schedule__item work-schedule__item--text">
-               Пн - Пт: 9:00 - 20:00
-            </p>
-            <p class="work-schedule__item work-schedule__item--text">
-               Сб - Вс: вихідний
-            </p>
-         </div>
-      </div>
-      <div class="page-footer__block page-footer__block--copyright">
-         <ul class="page-footer__menu footer-menu">
-            <li class="footer-menu__item">
-               <a href="#" class="footer-menu__link"> Водостічні системи </a>
-            </li>
-            <li class="footer-menu__item">
-               <a href="#" class="footer-menu__link"> Плівки та мембрани </a>
-            </li>
-            <li class="footer-menu__item">
-               <a href="#" class="footer-menu__link"> Вікна та люки </a>
-            </li>
-            <li class="footer-menu__item">
-               <a href="#" class="footer-menu__link"> Плити OSB </a>
-            </li>
-            <li class="footer-menu__item">
-               <a href="#" class="footer-menu__link"> Металопрофілі </a>
-            </li>
-         </ul>
-         <ul class="page-footer__socials socials">
-            <li class="socials__item">
-               <a href="#" class="socials__link socials__link--instagram">
-                  <span class="v-hidden">instagram</span>
-               </a>
-            </li>
-            <li class="socials__item">
-               <a href="#" class="socials__link socials__link--telegram">
-                  <span class="v-hidden">telegram</span>
-               </a>
-            </li>
-            <li class="socials__item">
-               <a href="#" class="socials__link socials__link--facebook">
-                  <span class="v-hidden">facebook</span>
-               </a>
-            </li>
-         </ul>
-         <p class="page-footer__copyright copyright">
-            &copy; Finkrovlya.com.ua 2021 All rights reserved
-         </p>
-      </div>
-      <div class="page-footer__block page-footer__block--contacts">
-         <ul class="page-footer__contacts contacts">
+         <ul class="contact__list contacts">
             <li
                class="
                   contacts__item contacts__item--footer contacts__item--address
@@ -835,11 +821,173 @@
          </ul>
       </div>
    </div>
+   <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.5157008943183!2d30.6290049157307!3d50.43149427947281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c56ae8943511%3A0x78d9aae4aa5b2576!2zNDhWLCDQpdCw0YDRjNC60L7QstGB0LrQvtC1INGILiwgNDjQkiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1629275199807!5m2!1sru!2sua"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+   ></iframe>
+</section>
+
+
+            </main>
+            <footer class="page__footer page-footer">
+    <div class="container page-footer__container">
+        <div class="page-footer__block page-footer__block--logo">
+            <a href="#" class="page-footer__logo logo">
+                <img class="logo__img" src="../img/logo.png" alt="" />
+            </a>
+
+            <div class="page-footer__work-schedule work-schedule">
+                <p class="work-schedule__item work-schedule__item--title">
+                    Графік роботи:
+                </p>
+                <p class="work-schedule__item work-schedule__item--text">
+                    Пн - Пт: 9:00 - 20:00
+                </p>
+                <p class="work-schedule__item work-schedule__item--text">
+                    Сб - Вс: вихідний
+                </p>
+            </div>
+        </div>
+        <div class="page-footer__block page-footer__block--copyright">
+            <ul class="page-footer__menu footer-menu">
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                        Водостічні системи
+                    </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                        Плівки та мембрани
+                    </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link"> Вікна та люки </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link"> Плити OSB </a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link"> Металопрофілі </a>
+                </li>
+            </ul>
+            <ul class="page-footer__socials socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--instagram">
+                        <span class="v-hidden">instagram</span>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--telegram">
+                        <span class="v-hidden">telegram</span>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--facebook">
+                        <span class="v-hidden">facebook</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="page-footer__copyright copyright">
+                &copy; Finkrovlya.com.ua 2021 All rights reserved
+            </p>
+        </div>
+        <div class="page-footer__block page-footer__block--contacts">
+            <ul class="page-footer__contacts contacts">
+                <li
+                    class="
+                        contacts__item
+                        contacts__item--footer
+                        contacts__item--address
+                    "
+                >
+                    <a class="contacts__link">
+                        Харківське шосе, 48В, Київ, 02160
+                    </a>
+                </li>
+                <li
+                    class="
+                        contacts__item
+                        contacts__item--footer
+                        contacts__item--phones
+                    "
+                >
+                    <a class="contacts__link" href="tel:+38(067) 500-06-75">
+                        +38(067) 500-06-75
+                    </a>
+                    <a class="contacts__link" href="tel:+38(050) 833-35-97">
+                        +38(050) 833-35-97
+                    </a>
+                </li>
+                <li
+                    class="
+                        contacts__item
+                        contacts__item--footer
+                        contacts__item--mail
+                    "
+                >
+                    <a
+                        class="contacts__link"
+                        href="mailTo:kocyubnyak@gmail.com"
+                    >
+                        kocyubnyak@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </footer>
 
-      <div class="svg-wrapper"></div>
+<div class="pop-up">
+    <form class="pop-up__form">
+        <h3 class="pop-up__title">Заявка на розрахунок</h3>
+        <label class="pop-up__label">
+            <input class="pop-up__field" type="text" name="pop-up__user-name" />
+            <span class="pop-up__label-text"> Ваше ім’я </span>
+        </label>
+        <label class="pop-up__label">
+            <input class="pop-up__field" type="tel" name="pop-up__user-tel" />
+            <span class="pop-up__label-text"> Ваш номер телефону </span>
+        </label>
+        <label class="pop-up__label">
+            <input
+                class="pop-up__field"
+                type="email"
+                name="pop-up__user-email"
+            />
+            <span class="pop-up__label-text"> Ваш e-mail </span>
+        </label>
 
-      <script src="./js/main.min.js"></script>
-      <script src="./js/vendor.min.js"></script>
-   </body>
+        <input class="pop-up__submit" type="submit" value="Надіслати заявку" />
+    </form>
+
+    <button type="button" class="pop-up__close">
+        <span class="v-hidden"> close pop-up </span>
+    </button>
+</div>
+
+
+        </div>
+        <div class="svg-wrapper">
+    <svg
+        id="house"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M6.35752 0.289165C6.25512 0.209508 6.12908 0.16626 5.99935 0.16626C5.86962 0.16626 5.74358 0.209508 5.64118 0.289165L0.841516 4.0225C0.631026 4.18624 0.460741 4.39592 0.343669 4.63552C0.226596 4.87513 0.165831 5.13832 0.166016 5.405V10.6667C0.166016 10.9761 0.288932 11.2728 0.507725 11.4916C0.726517 11.7104 1.02326 11.8333 1.33268 11.8333H3.66602C3.97544 11.8333 4.27218 11.7104 4.49097 11.4916C4.70977 11.2728 4.83268 10.9761 4.83268 10.6667V7.16666H7.16602V10.6667C7.16602 10.9761 7.28893 11.2728 7.50773 11.4916C7.72652 11.7104 8.02326 11.8333 8.33268 11.8333H10.666C10.9754 11.8333 11.2722 11.7104 11.491 11.4916C11.7098 11.2728 11.8327 10.9761 11.8327 10.6667V5.405C11.8327 5.13822 11.7718 4.87497 11.6545 4.63536C11.5372 4.39575 11.3667 4.18612 11.156 4.0225L6.35752 0.289165Z"
+            fill="black"
+        />
+    </svg>
+</div>
+
+
+        <script src="./js/main.min.js"></script>
+        <script src="./js/vendor.min.js"></script>
+    </body>
 </html>

@@ -1,82 +1,132 @@
 <section class="section home-sales">
-   <div class="container">
-      <h2 class="home-sales__title section__title section__title--light">
-         Знижки та пропозиції
-      </h2>
+    <div class="container">
+        <h2 class="home-sales__title section__title section__title--light">
+            Знижки та пропозиції
+        </h2>
 
-      <ul class="home-sales__slider">
-         <li class="home-sales__slide sales-slide">
-            <img
-               src="./img/product-image.jpg"
-               alt="product image"
-               class="sales-slide__img"
-               width="220"
-            />
-            <p class="sales-slide__category">Металочерепиця</p>
-            <h3 class="sales-slide__title">RUUKKI Frigge</h3>
-            <p class="sales-slide__description">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-               provident, maxime illo sit, hic repellendus sed quisquam nulla
-               voluptatibus est nam odit harum dicta, fugit sunt? Pariatur
-               labore repellendus qui.
-            </p>
-            <p class="sales-slide__prices">
-               <span class="sales-slide__old-price">200 грн/м²</span>
-               <span class="sales-slide__new-price">190 грн/м²</span>
-            </p>
-            <a href="#" class="sales-slide__goto-btn goto-product">
-               Перети до товару
-            </a>
-            <p class="sale-slide__date">Акція дійсна з 14.06.21 по 21.06.21</p>
-         </li>
-         <li class="home-sales__slide sales-slide">
-            <img
-               src="./img/product-image.jpg"
-               alt="product image"
-               class="sales-slide__img"
-               width="220"
-            />
-            <p class="sales-slide__category">Металочерепиця</p>
-            <h3 class="sales-slide__title">RUUKKI Frigge</h3>
-            <p class="sales-slide__description">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-               provident, maxime illo sit, hic repellendus sed quisquam nulla
-               voluptatibus est nam odit harum dicta, fugit sunt? Pariatur
-               labore repellendus qui.
-            </p>
-            <p class="sales-slide__prices">
-               <span class="sales-slide__old-price">200 грн/м²</span>
-               <span class="sales-slide__new-price">190 грн/м²</span>
-            </p>
-            <a href="#" class="sales-slide__goto-btn goto-product">
-               Перети до товару
-            </a>
-            <p class="sale-slide__date">Акція дійсна з 14.06.21 по 21.06.21</p>
-         </li>
-         <li class="home-sales__slide sales-slide">
-            <img
-               src="./img/product-image.jpg"
-               alt="product image"
-               class="sales-slide__img"
-               width="220"
-            />
-            <p class="sales-slide__category">Металочерепиця</p>
-            <h3 class="sales-slide__title">RUUKKI Frigge</h3>
-            <p class="sales-slide__description">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-               provident, maxime illo sit, hic repellendus sed quisquam nulla
-               voluptatibus est nam odit harum dicta, fugit sunt? Pariatur
-               labore repellendus qui.
-            </p>
-            <p class="sales-slide__prices">
-               <span class="sales-slide__old-price">200 грн/м²</span>
-               <span class="sales-slide__new-price">190 грн/м²</span>
-            </p>
-            <a href="#" class="sales-slide__goto-btn goto-product">
-               Перети до товару
-            </a>
-            <p class="sale-slide__date">Акція дійсна з 14.06.21 по 21.06.21</p>
-         </li>
-      </ul>
-   </div>
+        <div
+            class="saler-slider product-slider"
+            id="sales-slider"
+            style="
+                --swiper-navigation-color: #fff;
+                --swiper-navigation-size: 30px;
+                --swiper-pagination-color: #ff2626;
+            "
+        >
+            <ul class="home-sales__slider sales-slider-wrapper">
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+                <li class="home-sales__slide sales-slide product-card">
+                    <img
+                        src="./img/product-image.jpg"
+                        alt="product image"
+                        class="sales-slide__img product-card__img swiper-lazy"
+                        width="220"
+                    />
+                    <p class="product-card__category">Металочерепиця</p>
+                    <h3 class="product-card__title">RUUKKI Frigge 1</h3>
+                    <p class="product-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat provident, maxime illo sit, hic repellendus sed
+                        quisquam nulla voluptatibus est nam odit harum dicta,
+                        fugit sunt? Pariatur labore repellendus qui.
+                    </p>
+                    <p class="product-card__prices">
+                        <span class="product-card__old-price">200 грн/м²</span>
+                        <span class="product-card__new-price">190 грн/м²</span>
+                    </p>
+                    <a href="#" class="sales-slide__goto-btn goto-product">
+                        Перети до товару
+                    </a>
+                    <p class="product-card____date">
+                        Акція дійсна з 14.06.21 по 21.06.21
+                    </p>
+                    <span class="product-card__discount"> 10% OFF </span>
+                </li>
+            </ul>
+            <div class="swiper-button-prev swiper-nav"></div>
+            <div class="swiper-button-next swiper-nav"></div>
+
+            <div class="swiper-pagination swiper-nav"></div>
+        </div>
+    </div>
 </section>

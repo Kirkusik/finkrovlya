@@ -41,6 +41,10 @@
 
 .work-schedule {
    margin-top: 30px;
+
+   @media (max-width: 768px) {
+      margin-bottom: 40px;
+   }
 }
 
 .work-schedule__item {

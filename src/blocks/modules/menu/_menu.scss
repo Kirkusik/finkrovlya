@@ -1,0 +1,23 @@
+.menu {
+    background-color: $color-darken-white;
+}
+
+.menu__list {
+    @extend .list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu__link {
+    font-size: 14px;
+    line-height: 16px;
+
+    color: $color-black;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}

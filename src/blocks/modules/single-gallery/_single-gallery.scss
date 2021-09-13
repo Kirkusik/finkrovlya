@@ -1,0 +1,70 @@
+.cat-gallery {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.cat-gallery__item {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cat-gallery__item-title {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        border: 0.5px solid #2f3235;
+    }
+}
+
+.cat-gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    // height: 250px;
+    padding: 25px 30px;
+
+    & img {
+        width: 270px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: none !important;
+    }
+
+    & .swiper-slide dt {
+        display: flex;
+
+        & a {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(#000, 0.4);
+                background-image: url(../img/svg/mag-glass.svg);
+                background-size: auto 35px;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+}

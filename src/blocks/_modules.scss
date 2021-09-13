@@ -1,3 +1,9 @@
-@import "modules/header/header";
-@import "modules/home-page/home-page__main";
+@import "modules/pop-up/pop-up";
+@import "./modules/header/header";
+@import "./modules/home-page/home-page__main";
+@import "./modules/catalog/catalog";
+@import "./modules/pagination/pagination";
+@import "./modules/menu/menu";
+@import "./modules/single-product/single-product";
+@import "./modules/single-gallery/single-gallery";
 @import "modules/footer/footer";
