@@ -3,7 +3,7 @@
     padding-bottom: 60px;
 }
 
-.allready-viewed__title {
+.product__block-title {
     margin-bottom: 40px;
 
     font-weight: 500;
@@ -13,6 +13,9 @@
 }
 
 .allready-viewed__slider-wrapper {
-    @extend .list-reset;
     @extend .sales-slider-wrapper;
+}
+
+.allready-viewed__slider-list {
+    @extend .list-reset;
 }

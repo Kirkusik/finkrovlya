@@ -41,6 +41,7 @@ const productSliderThumbs = document.querySelector(".product__slider-thumbs");
 
 if (productSlider) {
     productSliderThumbs.addEventListener("click", function (evt) {
+        evt.preventDefault();
         const target = evt.target.closest("img");
         const mainImg = productSlider.querySelector("img");
 
@@ -61,31 +62,35 @@ catGalleryWrappers.forEach((catGalleryWrapper) => {
 
 function createCatSlider(sliderWrapper) {
     const sliderItems = [...sliderWrapper.querySelectorAll(".gallery-item")];
+
+    const brs = sliderWrapper.querySelectorAll("br");
+    brs.forEach((el) => {
+        el.remove();
+    });
+
+    sliderItems.forEach((el) => {
+        el.classList.add("swiper-slide");
+
+        const galLink = el.querySelector("a");
+
+        // console.log(galLink.closest(".gallery").id);
+        const galleryID = galLink.closest(".gallery").id;
+
+        if (galLink) {
+            // galLink.dataset.fslightbox = galleryID;
+            galLink.setAttribute("data-fslightbox", `${galleryID}`);
+        }
+    });
+    refreshFsLightbox();
+
     if (sliderItems.length > 4) {
         if (sliderWrapper) {
+            sliderWrapper.classList.remove("cat-gallery-wrapper--simple");
             sliderWrapper.classList.add("swiper");
+
             sliderWrapper.querySelector("div").classList.add("swiper-wrapper");
 
-            sliderItems.forEach((el) => {
-                el.classList.add("swiper-slide");
-
-                const galLink = el.querySelector("a");
-
-                if (galLink) {
-                    galLink.setAttribute(
-                        "data-fslightbox",
-                        sliderWrapper.firstElementChild.id
-                    );
-                }
-            });
-            refreshFsLightbox();
-
-            const brs = sliderWrapper.querySelectorAll("br");
-            brs.forEach((el) => {
-                el.remove();
-            });
-
-            const swiperNavs = document.querySelectorAll(".swiper-nav");
+            const swiperNavs = sliderWrapper.querySelectorAll(".swiper-nav");
             swiperNavs.forEach((el) => {
                 el.classList.remove("swiper-nav");
             });

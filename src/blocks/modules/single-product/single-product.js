@@ -78,3 +78,11 @@ CreateSlider(
     ".allready-viewed__slider-wrapper",
     ".allready-viewed__item"
 );
+CreateSlider(
+    0,
+    ".buy-with__slider",
+    ".buy-with__slider-wrapper",
+    ".buy-with__slider-item",
+    1,
+    0
+);

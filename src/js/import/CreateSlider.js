@@ -6,20 +6,23 @@ export default function CreateSlider(
     minSlides,
     sliderSelector,
     sliderWrapperSelector,
-    slidesSelector
+    slidesSelector,
+    maxSlidePerView = null,
+    spaceBetweenSlides = 30
 ) {
     const slides = document.querySelectorAll(slidesSelector);
+    const slider = document.querySelector(sliderSelector);
 
     if (slides.length > minSlides) {
-        const slider = document.querySelector(sliderSelector);
-        slider.classList.add("swiper");
-
         const sliderWrapper = document.querySelector(sliderWrapperSelector);
-        sliderWrapper.classList.add("swiper-wrapper");
 
         if (sliderSelector !== ".cat-gallery-wrapper") {
-            sliderWrapper.classList.remove(sliderWrapperSelector);
+            sliderWrapper.classList.remove(sliderWrapperSelector.slice(1));
         }
+
+        slider.classList.add("swiper");
+        // slider.update();
+        sliderWrapper.classList.add("swiper-wrapper");
 
         slides.forEach((el) => {
             el.classList.add("swiper-slide");
@@ -30,11 +33,51 @@ export default function CreateSlider(
             el.classList.remove("swiper-nav");
         });
 
+        let breakpoints = {};
+        if (maxSlidePerView) {
+            breakpoints = {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView:
+                        maxSlidePerView - 1 > 0 ? maxSlidePerView - 1 : 1,
+                },
+                // when window width is >= 576px
+                576: {
+                    slidesPerView:
+                        maxSlidePerView - 1 > 0 ? maxSlidePerView - 1 : 1,
+                    spaceBetween: 30,
+                },
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: maxSlidePerView,
+                    spaceBetween: 30,
+                },
+            };
+        } else {
+            breakpoints = {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                },
+                // when window width is >= 576px
+                577: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 992px
+                993: {
+                    slidesPerView: 3,
+                },
+            };
+        }
+
         new Swiper(sliderSelector, {
             speed: 400,
             loop: true,
             lazy: true,
             centeredSlides: true,
+            spaceBetween: 30,
+
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -43,22 +86,7 @@ export default function CreateSlider(
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                },
-                // when window width is >= 576px
-                576: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                // when window width is >= 992px
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
+            breakpoints: breakpoints,
         });
     }
 }

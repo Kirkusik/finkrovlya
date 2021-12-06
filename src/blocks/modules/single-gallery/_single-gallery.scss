@@ -35,6 +35,11 @@
     // height: 250px;
     padding: 25px 30px;
 
+    & .gallery-item {
+        float: none !important;
+        width: 100% !important;
+    }
+
     & img {
         width: 270px;
         height: 150px;
@@ -43,7 +48,7 @@
         border: none !important;
     }
 
-    & .swiper-slide dt {
+    & dt {
         display: flex;
 
         & a {
@@ -66,5 +71,13 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+.cat-gallery-wrapper--simple {
+    & .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
     }
 }

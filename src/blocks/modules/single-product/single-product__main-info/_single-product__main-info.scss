@@ -3,11 +3,19 @@
 
     grid-template-columns: 100px 1fr;
     gap: 30px;
+
+    max-width: 100%;
+    overflow: hidden;
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .product__slider-thumbs {
     & img {
         cursor: pointer;
+        border: none !important;
     }
 
     & > div {
@@ -20,8 +28,16 @@
         }
     }
     & .gallery-item {
-        float: none !important;
+        display: flex;
+        align-items: center;
         width: 100% !important;
+        float: none !important;
+    }
+
+    @media (max-width: 576px) {
+        & > div {
+            flex-direction: row;
+        }
     }
 }
 
@@ -65,14 +81,29 @@
 .product__status {
     display: inline-block;
     position: relative;
-    border: 1px solid $color-green;
+
     padding: 8px 10px 8px 40px;
     border-radius: 10px;
     font-weight: 300;
     font-size: 17px;
     line-height: 20px;
-    color: $color-green;
 
+    &--false {
+        border: 1px solid $color-red;
+        color: $color-red;
+
+        &::after {
+            background-image: url(../img/svg/cross-icon.svg);
+        }
+    }
+    &--true {
+        border: 1px solid $color-green;
+        color: $color-green;
+
+        &::after {
+            background-image: url(../img/svg/check-green.svg);
+        }
+    }
     &::after {
         content: "";
         position: absolute;
@@ -81,7 +112,6 @@
         width: 10px;
         height: 100%;
 
-        background-image: url(../img/svg/check-green.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
